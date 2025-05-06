@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- Mirrored from localhost/jhon2/produtos/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 07:06:17 GMT -->
+<!-- Mirrored from localhost/jhon2/produtos/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 21:32:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<!--[if IE]>
@@ -32,6 +32,62 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    text-decoration: none;
+  }
+
+  .tooltip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border-radius: 16px; /* Mantém quadrado com cantos suavemente arredondados */
+  }
+
+  .whatsapp-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tooltip-text {
+    position: absolute;
+    right: 70px;
+    background-color: #25d366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: sans-serif;
+    font-size: 14px;
+    pointer-events: none;
+	border-radius: 16px; /* Mantém quadrado com cantos suavemente arredondados */
+  }
+
+  .tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .tooltip-container:hover .whatsapp-icon {
+    transform: scale(1.1);
+  }
 </style>
 <link rel='stylesheet' id='rx-bootstrap-light-css'  href='../wp-content/plugins/aeolus-creative-portfolio/bootstrap_3_0/css/bootstrap.min1c9b.css?ver=4.6.1' type='text/css' media='all' />
 <link rel='stylesheet' id='rx_portfolio_css-css'  href='../wp-content/plugins/aeolus-creative-portfolio/css/rx_portfolio1c9b.css?ver=4.6.1' type='text/css' media='all' />
@@ -136,7 +192,7 @@ img.emoji {
 																<a title="Weblizar" href="../index.html">
 																<img src="../wp-content/uploads/2017/09/cropped-logo_front.png" style="height:55px; width:150px;" />
 																</a>	
-								<p>Eletrônica e Informática</p>
+								<p>Informática e Eletrônica</p>
 							  </div>
 				 
 							  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -149,16 +205,38 @@ img.emoji {
 						</div>
 						<div class="col-md-9">
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							  <ul id="menu-principal-superior" class="nav navbar-nav navbar-left"><li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-49"><a href="http://localhost/jhon2">INÍCIO</a></li>
+							  <ul id="menu-principal-superior" class="nav navbar-nav navbar-left"><li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-49"><a href="../index.html">INÍCIO</a></li>
 <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-38 current_page_item menu-item-39 active"><a href="index.html">PRODUTOS</a></li>
 <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="../servicos/index.html">SERVIÇOS</a></li>
 <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="../contatos/index.html">CONTATO</a></li>
-</ul>							</div>
+</ul>							
+
+
+<!-- WhatsApp à direita -->
+    <ul class="nav navbar-nav navbar-right">
+  <li id="menu-item-whatsapp" class="menu-item menu-item-type-custom menu-item-object-custom">
+    <a href="https://wa.me/5551982438742" target="_blank" style="
+      background-color: #25D366;
+      color: white;
+	  border-radius: 30px;
+	  padding: 12px 25px;
+	  font-size: 16px;
+      display: inline-block;
+      margin-top: 14px;
+      margin-right: 150px;
+      transition: background-color 0.3s;
+    " onmouseover="this.style.backgroundColor='#1ebe5d'" onmouseout="this.style.backgroundColor='#25D366'">
+      Suporte!
+    </a>
+  </li>
+</ul>
+</div>
 						</div>
 					</div>
 				</nav>		
 			</div>
 		</header>	
+		
 </div><div class="top-title-wrapper">
     <div class="container">
         <div class="row">
@@ -206,64 +284,16 @@ img.emoji {
 		</style>
 		<div id='gallery-1' class='gallery galleryid-38 gallery-columns-4 gallery-size-thumbnail'><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/80194_552954-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/80194_552954-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Kit Mouse+Teclado" aria-describedby="gallery-1-72" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/80194_552954-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/80194_552954-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='../wp-content/uploads/2017/09/60894_125882-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/60894_125882-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Estabilizadores e No-breaks" aria-describedby="gallery-1-69" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/60894_125882-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/60894_125882-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-72'>
-				Kit Mouse+Teclado
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-69'>
+				Estabilizadores e No-breaks
 				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/fonte-atx.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/fonte-atx-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Fontes de Alimentação" aria-describedby="gallery-1-63" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/fonte-atx-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/fonte-atx-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-63'>
-				Fontes de Alimentação
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/pc-gamer.png'><img width="150" height="150" src="../wp-content/uploads/2017/09/pc-gamer-150x150.png" class="attachment-thumbnail size-thumbnail" alt="Computadores Gamer (Monte)" aria-describedby="gallery-1-54" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-150x150.png 150w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-300x300.png 300w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-54x54.png 54w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer.png 628w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-54'>
-				Computadores Gamer (Monte)
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/video-card.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/video-card-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Placas de Vídeo" aria-describedby="gallery-1-64" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/video-card-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/video-card-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-64'>
-				Placas de Vídeo
-				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/50235_791133-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/50235_791133-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Placas de Rede PCI" aria-describedby="gallery-1-66" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/50235_791133-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/50235_791133-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-66'>
-				Placas de Rede PCI
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/60071_724007-1.jpg'><img width="150" height="138" src="../wp-content/uploads/2017/09/60071_724007-1-150x138.jpg" class="attachment-thumbnail size-thumbnail" alt="Teclados" aria-describedby="gallery-1-68" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-68'>
-				Teclados
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/60001_293865-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/60001_293865-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Cabos de Rede CAT-5, 5e, 6" aria-describedby="gallery-1-67" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/60001_293865-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/60001_293865-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-67'>
-				Cabos de Rede CAT-5, 5e, 6
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Notebooks" aria-describedby="gallery-1-52" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-52'>
-				Notebooks
-				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='../wp-content/uploads/2017/09/40308_860197-1.jpg'><img width="150" height="135" src="../wp-content/uploads/2017/09/40308_860197-1-150x135.jpg" class="attachment-thumbnail size-thumbnail" alt="Memórias RAM" aria-describedby="gallery-1-65" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-65'>
 				Memórias RAM
-				</dd></dl><dl class='gallery-item'>
-			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/60894_125882-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/60894_125882-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Estabilizadores e No-breaks" aria-describedby="gallery-1-69" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/60894_125882-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/60894_125882-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
-			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-69'>
-				Estabilizadores e No-breaks
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='../wp-content/uploads/2017/09/pc-home-e-empresarial.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/pc-home-e-empresarial-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Computadores Caseiros" aria-describedby="gallery-1-55" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/pc-home-e-empresarial-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-home-e-empresarial-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
@@ -272,10 +302,34 @@ img.emoji {
 				Computadores Caseiros
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/70228_547195-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/70228_547195-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Cabos e Adaptadores" aria-describedby="gallery-1-71" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/70228_547195-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/70228_547195-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='../wp-content/uploads/2017/09/50235_791133-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/50235_791133-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Placas de Rede PCI" aria-describedby="gallery-1-66" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/50235_791133-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/50235_791133-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-71'>
-				Cabos e Adaptadores
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-66'>
+				Placas de Rede PCI
+				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/20160107_225541-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/20160107_225541-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Mouses" aria-describedby="gallery-1-61" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/20160107_225541-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/20160107_225541-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-61'>
+				Mouses
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/80194_552954-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/80194_552954-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Kit Mouse+Teclado" aria-describedby="gallery-1-72" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/80194_552954-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/80194_552954-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-72'>
+				Kit Mouse+Teclado
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/70149_198922-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/70149_198922-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Monitores" aria-describedby="gallery-1-70" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/70149_198922-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/70149_198922-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-70'>
+				Monitores
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Notebooks" aria-describedby="gallery-1-52" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/notebook-a-partir-de-core-i3-hd-500gb-4gb-ram-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-52'>
+				Notebooks
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='../wp-content/uploads/2017/09/oc-essentials-motherboard-1.png'><img width="150" height="150" src="../wp-content/uploads/2017/09/oc-essentials-motherboard-1-150x150.png" class="attachment-thumbnail size-thumbnail" alt="Placas-mãe (Motherboards)" aria-describedby="gallery-1-53" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/oc-essentials-motherboard-1-150x150.png 150w, http://localhost/jhon2/wp-content/uploads/2017/09/oc-essentials-motherboard-1-54x54.png 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
@@ -290,10 +344,34 @@ img.emoji {
 				Gabinetes
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/20160107_225541-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/20160107_225541-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Mouses" aria-describedby="gallery-1-61" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/20160107_225541-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/20160107_225541-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='../wp-content/uploads/2017/09/video-card.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/video-card-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Placas de Vídeo" aria-describedby="gallery-1-64" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/video-card-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/video-card-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-61'>
-				Mouses
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-64'>
+				Placas de Vídeo
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/pc-gamer.png'><img width="150" height="150" src="../wp-content/uploads/2017/09/pc-gamer-150x150.png" class="attachment-thumbnail size-thumbnail" alt="Computadores Gamer (Monte)" aria-describedby="gallery-1-54" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-150x150.png 150w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-300x300.png 300w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer-54x54.png 54w, http://localhost/jhon2/wp-content/uploads/2017/09/pc-gamer.png 628w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-54'>
+				Computadores Gamer (Monte)
+				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/70228_547195-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/70228_547195-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Cabos e Adaptadores" aria-describedby="gallery-1-71" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/70228_547195-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/70228_547195-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-71'>
+				Cabos e Adaptadores
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/fonte-atx.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/fonte-atx-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Fontes de Alimentação" aria-describedby="gallery-1-63" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/fonte-atx-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/fonte-atx-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-63'>
+				Fontes de Alimentação
+				</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon landscape'>
+				<a href='../wp-content/uploads/2017/09/60001_293865-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/60001_293865-1.jpg" class="attachment-thumbnail size-thumbnail" alt="Cabos de Rede CAT-5, 5e, 6" aria-describedby="gallery-1-67" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/60001_293865-1.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/60001_293865-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+			</dt>
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-67'>
+				Cabos de Rede CAT-5, 5e, 6
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='../wp-content/uploads/2017/09/20170502_235541-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/20170502_235541-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Processadores (AMD, Intel)" aria-describedby="gallery-1-62" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/20170502_235541-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/20170502_235541-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
@@ -302,10 +380,10 @@ img.emoji {
 				Processadores (AMD, Intel)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='../wp-content/uploads/2017/09/70149_198922-1.jpg'><img width="150" height="150" src="../wp-content/uploads/2017/09/70149_198922-1-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="Monitores" aria-describedby="gallery-1-70" srcset="http://localhost/jhon2/wp-content/uploads/2017/09/70149_198922-1-150x150.jpg 150w, http://localhost/jhon2/wp-content/uploads/2017/09/70149_198922-1-54x54.jpg 54w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='../wp-content/uploads/2017/09/60071_724007-1.jpg'><img width="150" height="138" src="../wp-content/uploads/2017/09/60071_724007-1-150x138.jpg" class="attachment-thumbnail size-thumbnail" alt="Teclados" aria-describedby="gallery-1-68" /></a>
 			</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-70'>
-				Monitores
+				<dd class='wp-caption-text gallery-caption' id='gallery-1-68'>
+				Teclados
 				</dd></dl>
 			<br style='clear: both' />
 		</div>
@@ -333,22 +411,17 @@ img.emoji {
         <div class="container">
             <div class="footer-wrapper">
                 <div class="row">
-				<div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">SOBRE NÓS</div>			<div class="textwidget">Especializados em Informática e Eletrônica, no ramo há mais de 5 anos. Já trabalhamos com diversas tecnologias.              ___________________________
- Trabalhos com produtos importados e novos, equipe qualificada e disposta 24 horas. Resposta rápida a incidentes.</div>
+				<div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">SOBRE NÓS</div>			<div class="textwidget">Especializados em Informática e Eletrônica, no ramo há mais de 10 anos. Já trabalhamos com diversas tecnologias.              ______________________________________
+Trabalhos com produtos, equipamentos novos e equipe qualificada. Sempre no momento em que mais precisar.</div>
 		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">Páginas</div>		<ul>
-			<li class="page_item page-item-2"><a href="../pagina-exemplo/index.html">#2 (sem título)</a></li>
-<li class="page_item page-item-38 current_page_item"><a href="index.html">PRODUTOS</a></li>
+			<li class="page_item page-item-38 current_page_item"><a href="index.html">PRODUTOS</a></li>
 <li class="page_item page-item-41"><a href="../servicos/index.html">SERVIÇOS</a></li>
 <li class="page_item page-item-44"><a href="../contatos/index.html">CONTATO</a></li>
 		</ul>
-		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">ENTRE EM CONTATO</div>			<div class="textwidget"><p><span style="color: #808080;">SKYPE</span><br />
-                                                       unitechmob@gmail.com</p>
-<p><span style="color: #808080;">FONES E WHATSAPP</span></p>
-<p>51 3475.7788 / 51 9 8293.7608</p>
-<p><span style="color: #808080;">E-MAIL</span></p>
-<p>unitechmob@gmail.com</p>
-<p><span style="color: #808080;">SITE</span></p>
-<p>www.unitechmob.com.br</p>
+		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">ENTRE EM CONTATO</div>			<div class="textwidget"><p><span style="color: #808080;">FONE E WHATSAPP</span><br />
+(51) 98243.8742 | 3475.7788</p>
+<p><span style="color: #808080;">E-MAIL</span><br />
+unitechmobti@gmail.com</p>
 </div>
 		</div>                </div>				
             </div>
@@ -357,7 +430,7 @@ img.emoji {
             <div class="container">
                 <div class="row">
 				                    <div class="col-md-6 col-sm-6">
-                        <div class="copyright-text"> @ 2017 NetPartner Theme | Desenvolvido por							<a  rel="nofollow" href="http://facebook.com/origWarframe" target="_blank">
+                        <div class="copyright-text"> @ 2025 unitechmobti| Desenvolvido por							<a  rel="nofollow" href="https://www.instagram.com/unitechmob/" target="_blank">
 							Dioni Alan							</a>
 						</div>
                     </div>
@@ -384,7 +457,30 @@ img.emoji {
 <script type='text/javascript' src='../wp-includes/js/wp-embed.min1c9b.js?ver=4.6.1'></script>
 <script type='text/javascript' src='../wp-content/plugins/nimble-portfolio/includes/prettyphoto/prettyphotoe7f3.js?ver=2.1.7'></script>
 <script type='text/javascript' src='../wp-content/plugins/nimble-portfolio/includes/sorte7f3.js?ver=2.1.7'></script>
+
+<!-- Botão Flutuante do WhatsApp com Tooltip -->
+<a href="https://api.whatsapp.com/send?phone=5551982438742&text=Olá!%20Gostaria%20de%20mais%20informações." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <div class="tooltip-container">
+    <span class="tooltip-text">Fale conosco</span>
+    <div class="whatsapp-icon">
+	
+<svg xmlns="http://www.w3.org/2000/svg" 
+     viewBox="0 0 32 32" 
+     width="30" 
+     height="30" 
+     fill="white">
+  <path d="M16 2.67a13.34 13.34 0 0 0-11.43 20l-1.25 4.6a1 1 0 0 0 1.22 1.22l4.6-1.25A13.34 13.34 0 1 0 16 2.67zm0 24a10.61 10.61 0 0 1-5.46-1.53l-.39-.23-2.74.75.73-2.66-.25-.4A10.64 10.64 0 1 1 16 26.67zm5.87-8.13c-.32-.16-1.91-.94-2.2-1.05s-.5-.16-.7.16-.8 1.05-1 1.26-.37.23-.69.08a8.62 8.62 0 0 1-2.54-1.56 9.56 9.56 0 0 1-1.77-2.2c-.19-.33 0-.51.14-.67a8.5 8.5 0 0 0 .6-.76.59.59 0 0 0 0-.67c-.08-.16-.7-1.66-.96-2.28s-.5-.51-.7-.52h-.6a1.17 1.17 0 0 0-.83.39 3.5 3.5 0 0 0-1.1 2.6 6.13 6.13 0 0 0 1.29 3.18A14.33 14.33 0 0 0 16 21.33a5.88 5.88 0 0 0 3.13.91 3.55 3.55 0 0 0 2.25-.78 2.85 2.85 0 0 0 .92-2.15c0-.32-.12-.47-.24-.52z"/>
+</svg>
+    </div>
+  </div>
+</a>
+
 </body>
 
-<!-- Mirrored from localhost/jhon2/produtos/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 07:07:33 GMT -->
+
+
+<!-- Mirrored from localhost/jhon2/produtos/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 21:33:54 GMT -->
 </html>

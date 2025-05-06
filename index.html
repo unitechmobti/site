@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- Mirrored from localhost/jhon2/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 07:02:08 GMT -->
+<!-- Mirrored from localhost/jhon2/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 21:28:35 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<!--[if IE]>
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
     <meta charset="UTF-8" />		
 		<link rel="stylesheet" href="wp-content/themes/zion/style.css" type="text/css" media="screen" />
-	<title>UniTech &#8211; Eletrônica e Informática</title>
+	<title>UniTech &#8211; Informática e Eletrônica</title>
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
 <link rel="alternate" type="application/rss+xml" title="Feed para UniTech &raquo;" href="feed/index.html" />
@@ -32,6 +32,62 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    text-decoration: none;
+  }
+
+  .tooltip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    border-radius: 16px; /* Mantém quadrado com cantos suavemente arredondados */
+  }
+
+  .whatsapp-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tooltip-text {
+    position: absolute;
+    right: 70px;
+    background-color: #25d366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: sans-serif;
+    font-size: 14px;
+    pointer-events: none;
+	border-radius: 16px; /* Mantém quadrado com cantos suavemente arredondados */
+  }
+
+  .tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .tooltip-container:hover .whatsapp-icon {
+    transform: scale(1.1);
+  }
 </style>
 <link rel='stylesheet' id='rx-bootstrap-light-css'  href='wp-content/plugins/aeolus-creative-portfolio/bootstrap_3_0/css/bootstrap.min1c9b.css?ver=4.6.1' type='text/css' media='all' />
 <link rel='stylesheet' id='rx_portfolio_css-css'  href='wp-content/plugins/aeolus-creative-portfolio/css/rx_portfolio1c9b.css?ver=4.6.1' type='text/css' media='all' />
@@ -140,7 +196,7 @@ img.emoji {
 																<a title="Weblizar" href="index.html">
 																<img src="wp-content/uploads/2017/09/cropped-logo_front.png" style="height:55px; width:150px;" />
 																</a>	
-								<p>Eletrônica e Informática</p>
+								<p>Informática e Eletrônica</p>
 							  </div>
 				 
 							  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -151,13 +207,49 @@ img.emoji {
 							  </button>
 							</div>
 						</div>
-						<div class="col-md-9">
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							  <ul id="menu-principal-superior" class="nav navbar-nav navbar-left"><li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-49 active"><a href="http://localhost/jhon2">INÍCIO</a></li>
-<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="produtos/index.html">PRODUTOS</a></li>
-<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="servicos/index.html">SERVIÇOS</a></li>
-<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="contatos/index.html">CONTATO</a></li>
-</ul>							</div>
+						
+						
+						
+						
+						
+<div class="col-md-9">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- Menu principal à esquerda -->
+    <ul id="menu-principal-superior" class="nav navbar-nav navbar-left">
+      <li id="menu-item-49" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-49 active">
+        <a href="index.html">INÍCIO</a>
+      </li>
+      <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+        <a href="produtos/index.html">PRODUTOS</a>
+      </li>
+      <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42">
+        <a href="servicos/index.html">SERVIÇOS</a>
+      </li>
+      <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
+        <a href="contatos/index.html">CONTATO</a>
+      </li>
+    </ul>
+
+    <!-- WhatsApp à direita -->
+    <ul class="nav navbar-nav navbar-right">
+  <li id="menu-item-whatsapp" class="menu-item menu-item-type-custom menu-item-object-custom">
+    <a href="https://wa.me/5551982438742" target="_blank" style="
+      background-color: #25D366;
+      color: white;
+	  border-radius: 30px;
+	  padding: 12px 25px;
+	  font-size: 16px;
+      display: inline-block;
+      margin-top: 14px;
+      margin-right: 150px;
+      transition: background-color 0.3s;
+    " onmouseover="this.style.backgroundColor='#1ebe5d'" onmouseout="this.style.backgroundColor='#25D366'">
+      Suporte!
+    </a>
+  </li>
+</ul>
+  </div>
+</div>
 						</div>
 					</div>
 				</nav>		
@@ -348,7 +440,7 @@ img.emoji {
 										<i class="fa fa-lightbulb-o"></i>
 					<h4 class="h4-body-title">consultoria</h4>
 															<div class="content-box-text">
-						<p>Vírus? Internet lenta? Precisando de backup ou colocar impressoras na rede? Ligue: +55 51 3475.7788</p>
+						<p>Vírus, internet lenta, instalação de impressoras? Entre em contato!</p>
 					</div>
 									</div>    
 			</div>
@@ -396,25 +488,7 @@ img.emoji {
 		</div>
 		<div class="row">
 			<div class="blog-features-carousel">
-							
-							<div data-animdelay="0.0s" data-animspeed="1s" data-animrepeat="0" data-animtype="fadeIn" class="feature animated fadeIn animatedVisi" style="animation-delay: 0s; animation-duration: 1s;">
-								<div class="feature-image img-overlay">
-									
-																	</div>
-								<div class="feature-content">
-									<h3 class="h3-blog-title">
-										<a href="2017/09/14/ola-mundo/index.html"></a>
-									</h3>
-									<p></p>
-								</div>					
-								<div class="feature-details">
-									<span><i class="fa fa-picture-o"></i></span>							
-									<span><i class="fa fa-clock-o"></i> set 14, 2017</span>
-									<span><i class="fa fa-user"></i><a href="author/dioni/index.html">Admin </a></span>
-									
-								</div>        
-							</div>				
-							
+					
 			</div>
 		</div>
 	</div>
@@ -428,22 +502,17 @@ img.emoji {
         <div class="container">
             <div class="footer-wrapper">
                 <div class="row">
-				<div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">SOBRE NÓS</div>			<div class="textwidget">Especializados em Informática e Eletrônica, no ramo há mais de 5 anos. Já trabalhamos com diversas tecnologias.              ___________________________
- Trabalhos com produtos importados e novos, equipe qualificada e disposta 24 horas. Resposta rápida a incidentes.</div>
+				<div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">SOBRE NÓS</div>			<div class="textwidget">Especializados em Informática e Eletrônica, no ramo há mais de 10 anos. Já trabalhamos com diversas tecnologias.              ______________________________________
+Trabalhos com produtos, equipamentos novos e equipe qualificada. Sempre no momento em que mais precisar.</div>
 		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">Páginas</div>		<ul>
-			<li class="page_item page-item-2"><a href="pagina-exemplo/index.html">#2 (sem título)</a></li>
-<li class="page_item page-item-38"><a href="produtos/index.html">PRODUTOS</a></li>
+			<li class="page_item page-item-38"><a href="produtos/index.html">PRODUTOS</a></li>
 <li class="page_item page-item-41"><a href="servicos/index.html">SERVIÇOS</a></li>
 <li class="page_item page-item-44"><a href="contatos/index.html">CONTATO</a></li>
 		</ul>
-		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">ENTRE EM CONTATO</div>			<div class="textwidget"><p><span style="color: #808080;">SKYPE</span><br />
-                                                       unitechmob@gmail.com</p>
-<p><span style="color: #808080;">FONES E WHATSAPP</span></p>
-<p>51 3475.7788 / 51 9 8293.7608</p>
-<p><span style="color: #808080;">E-MAIL</span></p>
-<p>unitechmob@gmail.com</p>
-<p><span style="color: #808080;">SITE</span></p>
-<p>www.unitechmob.com.br</p>
+		</div><div class="col-md-3 col-sm-3 footer-col"><div class="footer-title">ENTRE EM CONTATO</div>			<div class="textwidget"><p><span style="color: #808080;">FONE E WHATSAPP</span><br />
+(51) 98243.8742 | 3475.7788</p>
+<p><span style="color: #808080;">E-MAIL</span><br />
+unitechmobti@gmail.com</p>
 </div>
 		</div>                </div>				
             </div>
@@ -452,7 +521,7 @@ img.emoji {
             <div class="container">
                 <div class="row">
 				                    <div class="col-md-6 col-sm-6">
-                        <div class="copyright-text"> @ 2017 NetPartner Theme | Desenvolvido por							<a  rel="nofollow" href="http://facebook.com/origWarframe" target="_blank">
+                        <div class="copyright-text"> @ 2025 unitechmobti| Desenvolvido por							<a  rel="nofollow" href="https://www.instagram.com/unitechmob/" target="_blank">
 							Dioni Alan							</a>
 						</div>
                     </div>
@@ -481,5 +550,30 @@ img.emoji {
 <script type='text/javascript' src='wp-content/plugins/nimble-portfolio/includes/sorte7f3.js?ver=2.1.7'></script>
 </body>
 
-<!-- Mirrored from localhost/jhon2/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 07:03:16 GMT -->
+
+<!-- Botão Flutuante do WhatsApp com Tooltip -->
+<a href="https://api.whatsapp.com/send?phone=5551982438742&text=Olá!%20Gostaria%20de%20mais%20informações." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <div class="tooltip-container">
+    <span class="tooltip-text">Fale conosco</span>
+    <div class="whatsapp-icon">
+	
+<svg xmlns="http://www.w3.org/2000/svg" 
+     viewBox="0 0 32 32" 
+     width="30" 
+     height="30" 
+     fill="white">
+  <path d="M16 2.67a13.34 13.34 0 0 0-11.43 20l-1.25 4.6a1 1 0 0 0 1.22 1.22l4.6-1.25A13.34 13.34 0 1 0 16 2.67zm0 24a10.61 10.61 0 0 1-5.46-1.53l-.39-.23-2.74.75.73-2.66-.25-.4A10.64 10.64 0 1 1 16 26.67zm5.87-8.13c-.32-.16-1.91-.94-2.2-1.05s-.5-.16-.7.16-.8 1.05-1 1.26-.37.23-.69.08a8.62 8.62 0 0 1-2.54-1.56 9.56 9.56 0 0 1-1.77-2.2c-.19-.33 0-.51.14-.67a8.5 8.5 0 0 0 .6-.76.59.59 0 0 0 0-.67c-.08-.16-.7-1.66-.96-2.28s-.5-.51-.7-.52h-.6a1.17 1.17 0 0 0-.83.39 3.5 3.5 0 0 0-1.1 2.6 6.13 6.13 0 0 0 1.29 3.18A14.33 14.33 0 0 0 16 21.33a5.88 5.88 0 0 0 3.13.91 3.55 3.55 0 0 0 2.25-.78 2.85 2.85 0 0 0 .92-2.15c0-.32-.12-.47-.24-.52z"/>
+</svg>
+    </div>
+  </div>
+</a>
+
+
+
+
+
+<!-- Mirrored from localhost/jhon2/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Apr 2025 21:29:41 GMT -->
 </html>
